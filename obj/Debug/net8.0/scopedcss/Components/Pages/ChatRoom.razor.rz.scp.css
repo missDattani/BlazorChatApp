@@ -1,0 +1,63 @@
+/* improved for chat text box */
+textarea[b-36trkebven] {
+    border: 1px dashed #888;
+    border-radius: 5px;
+    width: 80%;
+    overflow: auto;
+    background: #f7f7f7
+}
+
+/* improved for speech bubbles */
+.received[b-36trkebven], .sent[b-36trkebven] {
+    position: relative;
+    font-family: arial;
+    font-size: 1.1em;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+    .received[b-36trkebven]:after, .sent[b-36trkebven]:after {
+        content: '';
+        border: 20px solid transparent;
+        position: absolute;
+        margin-top: -30px;
+    }
+
+.sent[b-36trkebven] {
+    background: #03a9f4;
+    color: #fff;
+    margin-left: 10%;
+    top: 50%;
+    text-align: right;
+}
+
+.received[b-36trkebven] {
+    background: #4CAF50;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10%;
+}
+
+.sent[b-36trkebven]:after {
+    border-left-color: #03a9f4;
+    border-right: 0;
+    right: -20px;
+}
+
+.received[b-36trkebven]:after {
+    border-right-color: #4CAF50;
+    border-left: 0;
+    left: -20px;
+}
+
+/* div within bubble for name */
+.user[b-36trkebven] {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #000;
+}
+
+.msg[b-36trkebven] {
+    /*display: inline;*/
+}
